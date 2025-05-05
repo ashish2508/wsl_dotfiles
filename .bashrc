@@ -18,6 +18,7 @@ alias load='source ~/.bashrc'
 alias themes='cd /home/ash/.config/nvim/lua/ashish/plugins/themes/'
 alias sem='cd /mnt/c/users/KIIT0001/Desktop/CODE/semester/'
 alias config='cd /mnt/c/users/KIIT0001/AppData/Roaming/alacritty/'
+alias code='/snap/bin/code'
 set bell-style mute
 shopt -s histappend
 shopt -s cmdhist
@@ -47,6 +48,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
+
 #git/gh starts
 create-pr() {
   if [ -z "$1" ]; then
@@ -156,3 +158,6 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/snap/bin
+export DONT_PROMPT_WSL_INSTALL=1
+
