@@ -1,0 +1,97 @@
+{
+ "Week": "2025-07-05",
+ "LastWeek": "",
+ "X": 0.8271059102736089,
+ "Programs": [
+  {
+   "Program": "cmd/asm",
+   "Version": "go1.24.4",
+   "GoVersion": "go1.24.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {},
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/cgo",
+   "Version": "go1.24.4",
+   "GoVersion": "go1.24.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {},
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/compile",
+   "Version": "go1.24.4",
+   "GoVersion": "go1.24.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "compile/flag:buildid": 8,
+    "compile/flag:c": 8,
+    "compile/flag:complete": 8,
+    "compile/flag:dwarf": 3,
+    "compile/flag:goversion": 8,
+    "compile/flag:importcfg": 8,
+    "compile/flag:lang": 8,
+    "compile/flag:nolocalimports": 8,
+    "compile/flag:o": 8,
+    "compile/flag:p": 8,
+    "compile/flag:pack": 8,
+    "compile/flag:trimpath": 8,
+    "compile/invocations": 120
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/go",
+   "Version": "go1.24.4",
+   "GoVersion": "go1.24.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "go/build/flag:o": 13,
+    "go/buildcache/hit": 6212,
+    "go/buildcache/miss": 25,
+    "go/goroot:other": 55,
+    "go/invocations": 57,
+    "go/mode:module": 53,
+    "go/platform/host/linux/major-version:6": 53,
+    "go/platform/host/linux/version:6-6": 53,
+    "go/platform/target/goamd64:v1": 53,
+    "go/platform/target/goarch:amd64": 53,
+    "go/platform/target/goos:linux": 53,
+    "go/subcommand:build": 14,
+    "go/subcommand:env": 15,
+    "go/subcommand:install": 15,
+    "go/subcommand:mod-init": 1,
+    "go/subcommand:mod-tidy": 3,
+    "go/subcommand:mod-vendor": 1,
+    "go/subcommand:run": 3,
+    "go/subcommand:unknown": 2,
+    "go/subcommand:version": 1
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "cmd/link",
+   "Version": "go1.24.4",
+   "GoVersion": "go1.24.4",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "link/flag:buildid": 17,
+    "link/flag:buildmode": 17,
+    "link/flag:extld": 17,
+    "link/flag:importcfg": 17,
+    "link/flag:o": 17,
+    "link/flag:s": 1,
+    "link/flag:w": 1,
+    "link/invocations": 42
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.0.0-0"
+}
