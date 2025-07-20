@@ -4,6 +4,12 @@
     "type": "file",
     "source": "~/.config/fastfetch/ascii.txt"
   },
+  "display": {
+    "color": {
+      "keys": "bright_yellow",
+      "output": "green"
+    }
+  },
   "modules": [
     "os",
     "kernel",
@@ -13,3 +19,4 @@
     "locale"
   ]
 }
+
