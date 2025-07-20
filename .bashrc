@@ -1,3 +1,4 @@
+fastfetch
 alias chat="eval $HOME/Projects/chat-Gpt-Cli/chat"
 alias ll='ls -alF --color=auto'
 alias la='ls -A --color=auto'
@@ -188,12 +189,6 @@ run() {
 # ===== PROMPT CONFIGURATION =====
 eval "$(oh-my-posh init bash --config ~/.poshthemes/robbyrussell.omp.json)"
 
-# ===== NODE.JS VERSION MANAGERS =====
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
 # FNM (Fast Node Manager)
 FNM_PATH="$HOME/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
@@ -232,14 +227,6 @@ export BASHRC_LOADED=1
 
 # ===== ZOXIDE (BETTER CD) =====
 eval "$(zoxide init bash)"
-
-# ===== WELCOME MESSAGE =====
-if [[ $- == *i* ]] && [[ -z "$TMUX" ]]; then
-    echo " Welcome back, $(whoami)!"
-    echo " Location: $(pwd)"
-    echo " $(date '+%A, %B %d, %Y at %H:%M')"
-    echo ""
-fi
 
 . "$HOME/.cargo/env"
 

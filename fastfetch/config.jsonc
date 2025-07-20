@@ -1,62 +1,18 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "ubuntu_small",
-    "padding": {
-      "top": 1,
-      "right": 4
-    }
-  },
-  "display": {
-    "separator": " "
+    "type": "file",
+    "source": "~/.config/fastfetch/ascii.txt"
   },
   "modules": [
-    "break",
-    "break",
-    {
-      "type": "title"
-    },
-    "break",
-    {
-      "type": "os",
-      "key": " ",
-      "keyColor": "red",
-      "format": "{pretty-name}"
-    },
-    {
-      "type": "kernel",
-      "key": " ",
-      "keyColor": "red",
-      "format": "microsoft standard WSL2" // hardcoded
-    },
-    {
-      "type": "shell",
-      "key": " ",
-      "keyColor": "red"
-    },
-    {
-      "type": "packages",
-      "key": " ",
-      "keyColor": "red",
-      "format": "{} (apt)"
-    },
-    {
-      "type": "uptime",
-      "key": " ",
-      "keyColor": "red"
-    },
-    {
-      "type": "memory",
-      "key": " ",
-      "keyColor": "red",
-      "format": "{used} / {total}"
-    },
-    "break",
-    {
-      "type": "colors",
-      "symbol": "circle"
-    },
-    "break",
-    "break"
+    "os",
+    "host",
+    "kernel",
+    "shell",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "locale"
   ]
 }
