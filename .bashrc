@@ -115,16 +115,14 @@ run() {
     local file="$1"
     local ext="${file##*.}"
     local basename="${file%.*}"
-    local start_time end_time duration
 
-    start_time=$(date +%s.%N)
 
     case "$ext" in
         c)
-            gcc -std=c17 -Wall -Wextra -O2 "$file" -o "$basename" && "./$basename"
+            gcc -std=c17  "$file" -o "$basename" && "./$basename"
             ;;
         cpp|cc|cxx|c++)
-            g++ -std=c++20 -Wall -Wextra -O2 "$file" -o "$basename" && "./$basename"
+            g++ -std=c++23 "$file" -o "$basename" && "./$basename"
             ;;
         java)
             javac "$file" && java "$basename"
@@ -174,14 +172,6 @@ run() {
     esac
 
     local exit_code=$?
-    end_time=$(date +%s.%N)
-    duration=$(echo "$end_time - $start_time" | bc -l 2>/dev/null || echo "unknown")
-
-    if [[ $exit_code -eq 0 ]]; then
-        echo "${duration}sec"
-    else
-        echo "Exited with code $exit_code"
-    fi
 
     return $exit_code
 }
@@ -247,5 +237,5 @@ esac
 
 export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 # Set it to the correct bob-managed path
-export VIMRUNTIME=/home/ash/.local/share/bob/v0.11.3/share/nvim/runtime
+export VIMRUNTIME=/home/ash/.local/share/bob/nightly/share/nvim/runtime
 
