@@ -2,21 +2,13 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "file",
-    "source": "~/.config/fastfetch/ascii.txt"
+    "source": "~/.config/fastfetch/ascii.txt",
   },
   "display": {
     "color": {
       "keys": "bright_yellow",
-      "output": "green"
-    }
+      "output": "cyan",
+    },
   },
-  "modules": [
-    "os",
-    "kernel",
-    "shell",
-    "cpu",
-    "gpu",
-    "locale"
-  ]
+  "modules": ["os", "kernel", "shell", "cpu", "gpu", "locale"],
 }
-
